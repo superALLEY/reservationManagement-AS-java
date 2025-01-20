@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Menu Button -->
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Menu"
+            android:tint="@color/purple_500"
+            android:layout_gravity="end" />
+
+        <!-- Form Section -->
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre nom ici"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre email ici"
+            android:inputType="textEmailAddress" />
+
+        <!-- Number of People -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de personnes"
+            android:paddingTop="16dp" />
+
+        <!-- Number Increment/Decrement -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Number Display -->
+            <TextView
+                android:id="@+id/people_count_display"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="1"
+                android:textSize="24sp"
+                android:gravity="center_vertical|start"
+                android:textColor="@android:color/black" />
+
+            <!-- Buttons Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/plus_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="30sp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/minus_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-"
+                    android:textSize="30sp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Start Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date de début" />
+
+        <Button
+            android:id="@+id/start_date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sélectionnez la date de début"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <!-- End Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date de fin" />
+
+        <Button
+            android:id="@+id/end_date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sélectionnez la date de fin"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <!-- Confirm Reservation -->
+        <Button
+            android:id="@+id/start_reservation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DÉMARRER LA RÉSERVATION"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

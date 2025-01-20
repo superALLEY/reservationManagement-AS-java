@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_chambre"
+        android:title="Chambre" />
+    <item
+        android:id="@+id/menu_sauna"
+        android:title="Sauna" />
+    <item
+        android:id="@+id/menu_massage"
+        android:title="Massage" />
+    <item
+        android:id="@+id/menu_buffet"
+        android:title="Buffet" />
+    <item
+        android:id="@+id/menu_soins_de_beaute"
+        android:title="Soins de beauté" />
+</menu>

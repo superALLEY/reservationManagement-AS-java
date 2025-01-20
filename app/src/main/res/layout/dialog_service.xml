@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Dialog Title -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre titre ici"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+    <!-- Radio Group -->
+    <RadioGroup
+        android:id="@+id/service_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jour de la semaine" />
+
+        <RadioButton
+            android:id="@+id/radio_weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fin de semaine" />
+
+        <RadioButton
+            android:id="@+id/radio_all_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tous les jours" />
+    </RadioGroup>
+
+    <!-- Quantity Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp">
+
+        <!-- Quantity Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantité"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Quantity Display -->
+        <TextView
+            android:id="@+id/service_quantity"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="01"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Buttons Vertical Layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Plus Button -->
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="+"
+                android:textSize="30sp"
+                android:backgroundTint="@color/purple_500"
+                android:gravity="center" />
+
+            <!-- Minus Button -->
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="-"
+                android:textSize="30sp"
+                android:backgroundTint="@color/purple_500"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
